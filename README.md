@@ -1,9 +1,12 @@
-# Xóa folder .terraform (recursive, force, không hỏi xác nhận)
+### Xóa folder .terraform (recursive, force, không hỏi xác nhận)
+``` bash
 Remove-Item -Path .terraform -Recurse -Force
+```
 
-# Xóa file lock nếu tồn tại (để Terraform init lại từ đầu)
+#### Xóa file lock nếu tồn tại (để Terraform init lại từ đầu)
+```bash
 Remove-Item -Path .terraform.lock.hcl -Force -ErrorAction SilentlyContinue
-
+```
 
 # Xây dựng hạ tầng AWS EKS với Terraform (Compliance as Code - Phần Infrastructure)
 
